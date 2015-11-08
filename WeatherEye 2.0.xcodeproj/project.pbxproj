@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5CCDB5981BEFC1340077192A /* WeatherEye_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCDB5971BEFC1340077192A /* WeatherEye_2_0Tests.swift */; };
 		5CCDB5A31BEFC1340077192A /* WeatherEye_2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCDB5A21BEFC1340077192A /* WeatherEye_2_0UITests.swift */; };
 		5CCDB5BA1BEFC2670077192A /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCDB5B91BEFC2670077192A /* CurrentWeather.swift */; };
 		5CCDB5BB1BEFC2670077192A /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCDB5B91BEFC2670077192A /* CurrentWeather.swift */; };
@@ -58,6 +57,8 @@
 		5CCDB5F81BEFC6340077192A /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CCDB5F51BEFC6340077192A /* CurrentWeather.plist */; };
 		5CCDB5FB1BEFC6670077192A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CCDB5F91BEFC6670077192A /* Info.plist */; };
 		5CCDB5FC1BEFC6670077192A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CCDB5F91BEFC6670077192A /* Info.plist */; };
+		5CCDB5FE1BEFD7360077192A /* CurrentWeatherItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCDB5FD1BEFD7360077192A /* CurrentWeatherItemTests.swift */; };
+		5CCDB6001BEFE49E0077192A /* DailyWeatherItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCDB5FF1BEFE49E0077192A /* DailyWeatherItemTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +81,6 @@
 /* Begin PBXFileReference section */
 		5CCDB57F1BEFC1330077192A /* WeatherEye 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeatherEye 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCDB5931BEFC1340077192A /* WeatherEye 2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WeatherEye 2.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CCDB5971BEFC1340077192A /* WeatherEye_2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEye_2_0Tests.swift; sourceTree = "<group>"; };
 		5CCDB5991BEFC1340077192A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CCDB59E1BEFC1340077192A /* WeatherEye 2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WeatherEye 2.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCDB5A21BEFC1340077192A /* WeatherEye_2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEye_2_0UITests.swift; sourceTree = "<group>"; };
@@ -102,6 +102,8 @@
 		5CCDB5F11BEFC6030077192A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CCDB5F51BEFC6340077192A /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
 		5CCDB5F91BEFC6670077192A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CCDB5FD1BEFD7360077192A /* CurrentWeatherItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherItemTests.swift; sourceTree = "<group>"; };
+		5CCDB5FF1BEFE49E0077192A /* DailyWeatherItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyWeatherItemTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +165,9 @@
 		5CCDB5961BEFC1340077192A /* WeatherEye 2.0Tests */ = {
 			isa = PBXGroup;
 			children = (
-				5CCDB5971BEFC1340077192A /* WeatherEye_2_0Tests.swift */,
 				5CCDB5991BEFC1340077192A /* Info.plist */,
+				5CCDB5FD1BEFD7360077192A /* CurrentWeatherItemTests.swift */,
+				5CCDB5FF1BEFE49E0077192A /* DailyWeatherItemTests.swift */,
 			);
 			path = "WeatherEye 2.0Tests";
 			sourceTree = "<group>";
@@ -392,16 +395,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CCDB5BB1BEFC2670077192A /* CurrentWeather.swift in Sources */,
-				5CCDB5981BEFC1340077192A /* WeatherEye_2_0Tests.swift in Sources */,
 				5CCDB5E71BEFC5170077192A /* WeeklyTableViewController.swift in Sources */,
 				5CCDB5D71BEFC3B30077192A /* BackgroundView.swift in Sources */,
 				5CCDB5C31BEFC2AF0077192A /* Icon.swift in Sources */,
 				5CCDB5E31BEFC4F00077192A /* ViewController.swift in Sources */,
+				5CCDB5FE1BEFD7360077192A /* CurrentWeatherItemTests.swift in Sources */,
 				5CCDB5BF1BEFC28D0077192A /* DailyWeather.swift in Sources */,
 				5CCDB5DF1BEFC4180077192A /* DetailBackgroundView.swift in Sources */,
 				5CCDB5F31BEFC6030077192A /* AppDelegate.swift in Sources */,
 				5CCDB5DB1BEFC3E30077192A /* DailyWeatherTableViewCell.swift in Sources */,
 				5CCDB5CB1BEFC2FE0077192A /* NetworkOperation.swift in Sources */,
+				5CCDB6001BEFE49E0077192A /* DailyWeatherItemTests.swift in Sources */,
 				5CCDB5CF1BEFC3250077192A /* ForecastService.swift in Sources */,
 				5CCDB5C71BEFC2D40077192A /* Forecast.swift in Sources */,
 			);
