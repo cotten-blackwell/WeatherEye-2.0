@@ -41,9 +41,21 @@ class NetworkOperationTests: XCTestCase {
     }
     
 //    func testThatNetworkOperationReturnsJSONDictionary() {
-//        let returnedDictionary: JSONDictionaryCompletion =
+//        networkOperation!.downloadJSONFromURL {
+//            (let JSONDictionary) in
+//            let forecast = Forecast(weatherDictionary: JSONDictionary)
+//            completion(forecast)
+//
 //        XCTAssertEqual(self.networkOperation!.queryURL, url2,
 //            "A JSON dictionary should have been returned")
 //    }
-//    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

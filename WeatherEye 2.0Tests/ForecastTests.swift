@@ -64,56 +64,20 @@ class ForecastTests: XCTestCase {
         
         forecast = Forecast(weatherDictionary: weatherDictionary)
     }
-//    
-//    func testThatDailyWeatherItemHasAMaxTemperatureValue() {
-//        XCTAssertEqual(dailyWeather!.maxTemperature!, 78,
-//            "A daily high temperature value should have been set")
-//    }
-//    
-//    func testThatDailyWeatherItemHasAMinTemperatureValue() {
-//        XCTAssertEqual(dailyWeather!.minTemperature!, 67,
-//            "A daily low temperature value should have been set")
-//    }
-//    
-//    func testThatDailyWeatherItemHasAHumidityValue() {
-//        XCTAssertEqual(dailyWeather!.humidity!, 33,
-//            "A humidity value should have been set")
-//    }
-//    
-//    func testThatDailyWeatherItemHasAPrecipitationValue() {
-//        XCTAssertEqual(dailyWeather!.precipChance!, 10,
-//            "A precipitation probability should have been set")
-//    }
-//    
-//    func testThatDailyWeatherItemHasASummary() {
-//        XCTAssertEqual(dailyWeather!.summary!, "Another beautiful day!",
-//            "A summary should have been set")
-//    }
-//    
-//    func testThatDailyWeatherItemHasAnIcon() {
-//        let icon: UIImage? = UIImage(named: "default.png")
-//        XCTAssertEqual(dailyWeather!.icon!, icon!,
-//            "An icon should have been set")
-//    }
-//    
-//    func testThatDailyWeatherItemHasASunriseTime() {
-//        let sunriseTime: String? = self.dailyWeather?.timeStringFromUnixTime(1446993823)
-//        XCTAssertEqual(dailyWeather!.sunriseTime!, sunriseTime!,
-//            "An sunrise time should have been set")
-//    }
-//    
-//    func testThatDailyWeatherItemHasASunsetTime() {
-//        let sunsetTime: String? = self.dailyWeather?.timeStringFromUnixTime(1447031148)
-//        XCTAssertEqual(dailyWeather!.sunsetTime!, sunsetTime!,
-//            "An sunset time should have been set")
-//    }
-//    
-//    func testThatDailyWeatherItemHasADay() {
-//        let day: String? = self.dailyWeather?.dayStringFromTime(1446993823 + 3600)
-//        XCTAssertEqual(dailyWeather!.day!, day!,
-//            "A day of the week should have been set")
-//    }
-//    
+
+    func testThatForecastHasCurrentWeatherAndCurrentTemp() {
+        XCTAssertEqual(forecast!.currentWeather!.temperature!, 99,
+            "The forecast should have the current weather with current temp")
+    }
     
+    func testThatForecastHasCurrentWeatherSummary() {
+        XCTAssertEqual(forecast!.currentWeather!.summary!, "It's hot and wet!",
+            "The forecast should have the current weather summary")
+    }
+    
+    func testThatForecastHasDailyWeatherForTwoDays() {
+        XCTAssertEqual(forecast!.weekly.count, 2,
+            "The forecast should have daily weather info for two days")
+    }
     
 }
